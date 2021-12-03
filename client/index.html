@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <button id="complimentButton">Get a compliment</button>
+    <script>
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+
+    <button id="fortuneButton">Get your Fortune</button>
+    <script>
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+
+    <div class="horoscopeDropdown">
+      <button class="horoscopeButton">Choose your Sign to get your Horoscope</button>
+      <div class="horoscopeDropdown-content">
+        <a id="1">Aries</a>
+        <a id="2">Taurus</a>
+        <a id="3">Gemini</a>
+        <a id="4">Cancer</a>
+        <a id="5">Leo</a>
+        <a id="6">Virgo</a>
+        <a id="7">Libra</a>
+        <a id="8">Scorpio</a>
+        <a id="9">Sagittarius</a>
+        <a id="10">Capricorn</a>
+        <a id="11">Aquarius</a>
+        <a id="12">Pisces</a>
+      </div>
+    </div>
+          <script>
+            document.getElementById("1").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/aries/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("2").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/taurus/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("3").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/gemini/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("4").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/cancer/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("5").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/leo/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("6").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/virgo/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("7").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/libra/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("8").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/scorpio/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("9").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/sagittarius/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("10").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/capricorn/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("11").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/aquarius/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+          <script>
+            document.getElementById("12").onclick = function (){
+              axios.get("http://localhost:4000/api/horoscope/pisces/")
+              .then(function(response){
+                const data = response.data
+                alert(data)
+              })
+            }
+          </script>
+
+
+
+
+      <button id="getResidents">Get Residents</button>
+      <script>
+        document.getElementById("getResidents").onclick = function(){
+          axios.get("https://practiceapi.devmountain.com/api/posts")
+          .then(console.log('https://practiceapi.devmountain.com/api/posts'))
+        }
+      </script>
+
+
+
+
+
+
+
+  </body>
+</html>

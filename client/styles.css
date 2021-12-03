@@ -1,0 +1,20 @@
+.horoscopeDropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.horoscopeDropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.horoscopeDropdown-content a{
+    display: block;
+}
+
+.horoscopeDropdown-content a:hover{background-color: #ddd;}
+
+.horoscopeDropdown:hover .horoscopeDropdown-content{display: block;}
+
+.horoscopeDropdown:hover .horoscopeButton{background-color: #3e8e41;}
